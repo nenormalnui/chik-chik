@@ -1,0 +1,49 @@
+.price {
+    padding: 62px 0;
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin: 0 0 16px;
+    }
+    &__tagline {
+        margin: 0 0 40px;
+    }
+    &__wrapper-content {
+        display: flex;
+        gap: 32px;
+        &::before {
+            content: '';
+            flex-basis: 50%;
+            background-position: top;
+            background-size: cover;
+            background-image: url('../img/price-bg.jpg');
+        }
+    }
+    &__content {
+        flex-basis: 50%;
+    }
+    &__list {
+        padding: 0;
+        margin: 0 0 62px;
+        list-style: none;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 1;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #BFBDB2;
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__item-title {
+        text-transform: uppercase;
+    }
+    &__item-count {
+        white-space: nowrap;
+    }
+}

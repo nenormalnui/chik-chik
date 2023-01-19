@@ -1,0 +1,47 @@
+.about {
+    padding: 62px 0;
+    &__title {
+        max-width: 700px;
+        font-weight: 400;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin: 0 0 24px;
+    }
+    &__description {
+        max-width: 700px;
+        line-height: 1.5;
+        margin: 0 0 72px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 384px);
+        gap: 24px 32px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        padding: 6px 6px 6px 96px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 88px;
+        &_top {
+            background-image: url('../img/icon-1.svg');
+        }
+        &_master {
+            background-image: url('../img/icon-2.svg');
+        }
+        &_warranty {
+            background-image: url('../img/icon-3.svg');
+        }
+    }
+    &__item-title {
+        margin: 0 0 8px;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    &__item-description {
+        margin: 0;
+        line-height: 1.3;
+    }
+}
