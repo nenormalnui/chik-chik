@@ -14,17 +14,18 @@
     }
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 384px);
+        grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
         gap: 24px 32px;
         margin: 0;
         padding: 0;
         list-style: none;
     }
     &__item {
-        padding: 6px 6px 6px 96px;
+        padding: 6px 0 6px 96px;
         background-position: left;
         background-repeat: no-repeat;
-        background-size: 88px;
+        background-size: 80px;
+        min-height: 80px;
         &_top {
             background-image: url('../img/icon-1.svg');
         }

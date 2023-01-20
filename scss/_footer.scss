@@ -1,0 +1,38 @@
+.footer {
+    &__container {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        align-items: center;
+        gap: 40px;
+        padding-top: 17px;
+        padding-bottom: 24px;
+        border-top: 1px solid #BFBDB2;
+    }
+    &__navigation {
+        justify-self: center;
+    }
+    &__list-developers {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+        font-size: 12px;
+        line-height: 1.0;
+    }
+    &__developer-link {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+            text-decoration: underline;
+            color: #BFBDB2;
+        }
+    }
+    &__copyright {
+        margin: 0;
+        font-size: 12px;
+        line-height: 100%;
+    }
+}

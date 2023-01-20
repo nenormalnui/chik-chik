@@ -9,7 +9,21 @@
         &__arrow {
             bottom: 12%;
         }
-    }    
+    }
+    .about {
+        &__description {
+            margin: 0 0 46px;
+        }
+        &__list {
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            column-gap: 29px;
+        }
+        &__item {
+            background-position: top left;
+            padding-top: 96px;
+            padding-left: 0;
+        }
+    }        
 }
 
 @media screen and (max-width: 768px) {
@@ -56,7 +70,61 @@
             margin-bottom: 40px;
         }
     }
-    
+    .about {
+        padding: 40px 0;
+        &__title {
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        &__description {
+            margin: 0 0 32px;
+        }
+        &__list {
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            column-gap: 29px;
+        }
+        &__item {
+            background-position: left;
+            padding-left: 96px;
+            padding-top: 0;
+            &-title {
+                font-size: 16px;
+            }
+        }
+    }
+    .reserve {
+        padding: 40px 0 80px;
+        &__title {
+            font-size: 32px;
+        }
+        &__list {
+            margin-bottom: 40px;
+        }
+        &__form-container {
+            margin-bottom: 32px;
+        }
+        &__fieldset {
+            margin-bottom: 40px;
+            &_sub {
+                margin-bottom: 20px;
+            }
+        }
+        &__legend {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+    }
+    .radio {
+        &__label {
+            padding: 12px 16px;
+            font-size: 12px;
+            &_spec {
+                padding-left: 40px;
+                background-size: 24px;
+            }
+        }
+    }     
 }
 
 @media screen and (max-width: 560px) {
@@ -68,6 +136,16 @@
     }
     .container {
         padding: 0 24px;
+    }
+    .navigation {
+        &__list {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &__link {
+            font-size: 12px;
+        }
     }
     .main-link {
         padding: 10px 24px;
@@ -117,8 +195,56 @@
         }
     }
     .about {
-        &__description {
-            margin: 0 0 46px;
+        padding: 32px 0;
+        &__title {
+            font-size: 20px;
+            margin-bottom: 16px;
         }
-    }    
+        &__description {
+            font-size: 12px;
+        }
+        &__list {
+            grid-template-columns: min-max(272px, 1fr);
+        }
+        &__item {
+            background-size: 64px;
+            padding-left: 72px;
+            padding-top: 0;
+            min-height: 64px;
+        }
+    }
+    .reserve {
+        padding: 32px 0 64px;
+        &__title {
+            font-size: 20px;
+        }
+        &__list {
+            padding-left: 18px;
+            margin-bottom: 32px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
+        &__form-container {
+            margin-bottom: 24px;
+        }
+        &__fieldset {
+            margin-bottom: 32px;
+        }
+    }
+    .footer {
+        max-width: 560px;
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        &__navigation {
+            justify-self: flex-start;
+        }
+        &__list-developers {
+            font-size: 10px;
+        }
+        &__copyright {
+            font-size: 10px;
+        }
+    }   
 }
