@@ -42,6 +42,7 @@
     line-height: 100%;
     text-transform: uppercase;
     color: #241D1C;
+    border: none;
     background: #F6F3E3;
     &:hover:not(:disabled) {
         background: #EFE7BE;
@@ -62,5 +63,8 @@
         text-transform: uppercase;
         max-width: 904px;
         margin: 0 0 36px;
+    }
+    &__slider {
+        min-height: 372px;
     }
 }
