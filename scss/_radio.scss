@@ -7,6 +7,9 @@
             background: #F6F3E3;
             color: #241D1C;
         }
+        &:disabled + .radio__label{
+            opacity: 0.3;
+        }
     }
     &__label {
         cursor: pointer;
@@ -17,7 +20,7 @@
         text-transform: uppercase;
         border: 1px solid #BFBDB2;
         border-radius: 36px;
-        &:hover {
+        &:hover:not(:disabled) {
             color: #EFE7BE;
         }
         &_spec {
