@@ -121,7 +121,10 @@
             font-size: 12px;
             &_spec {
                 padding-left: 40px;
-                background-size: 24px;
+                &::before {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }     

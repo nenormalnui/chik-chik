@@ -20,15 +20,24 @@
         text-transform: uppercase;
         border: 1px solid #BFBDB2;
         border-radius: 36px;
-        &:hover:not(:disabled) {
-            color: #EFE7BE;
-        }
         &_spec {
+            position: relative;
             padding-left: 52px;
-            background-image: var(--bg-image);
-            background-size: 36px;
-            background-position: 8px;
-            background-repeat: no-repeat;
+            &::before {
+                position: absolute;
+                content: '';
+                display: block;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                background-image: var(--bg-image);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
     }
 }
